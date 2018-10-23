@@ -1,0 +1,45 @@
+public class Animals {
+	final static int AGE = 5;
+	final static double WEIGHT = 30;
+	final static double HEIGHT = 100;
+	public String name;
+	public int age;
+	public double weight;
+	public double height;
+	
+	public Animals(String name, int age, double weight, double height) {
+		this.name = name;
+		this.age = age;
+		this.weight = weight;
+		this.height = height;
+	}
+	
+	public Animals() {
+
+	}
+	
+	public void show() {
+		System.out.println("name = "+name+", age = "+age
+				+", weight = "+weight+", height = "+height);
+	}
+	
+	public static void CampWithFin(Animals ob1) {
+		if (ob1.age==AGE) System.out.print("Р’РѕР·СЂР°СЃС‚С‹ СЂР°РІРЅС‹; ");
+		if (ob1.age>AGE) System.out.print( ob1.name+" РЎС‚Р°СЂС€Рµ 5 Р»РµС‚; ");
+		if (ob1.age<AGE) System.out.print( ob1.name+" РњР»Р°РґС€Рµ 5 Р»РµС‚; ");
+		if (ob1.weight==WEIGHT) System.out.print(" РћРґРёРЅР°РєРѕРІС‹ РїРѕ РІРµСЃСѓ; ");
+		if (ob1.weight>WEIGHT) System.out.print( ob1.name+" Р‘РѕР»СЊС€Рµ 30 РєРі; ");
+		if (ob1.weight<WEIGHT) System.out.print( ob1.name+" РњРµРЅСЊС€Рµ 30 РєРі; ");
+		if (ob1.height==HEIGHT) System.out.print(" РћРґРёРЅР°РєРѕРІС‹ РїРѕ СЂРѕСЃС‚Сѓ; ");
+		if (ob1.height>HEIGHT) System.out.print( ob1.name+" Р‘РѕР»СЊС€Рµ 100 СЃРј; ");
+		if (ob1.height<HEIGHT) System.out.print( ob1.name+" РњРµРЅСЊС€Рµ 100 СЃРј; ");
+	}
+
+	public static  void Compare(Animals ob1, Animals ob2) {
+		if(ob1.name == ob2.name) {
+			System.out.println("True");
+		} else {
+			System.out.println("False");
+		}
+	}
+}
